@@ -9,6 +9,27 @@ main {
         justify-content: center;
         padding-top: 100px;
 
+        .scelta-metodo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50%;
+            button{
+                padding: 10px 20px;
+                margin: 10px;
+                text-align: center;
+                width: 180px;
+                background-color: $main-bg;
+                border: 2px solid $text-color;
+                color: $text-color;
+                border-radius: 20px;
+                font-size: 20px;
+                
+
+            }
+        }
+
         .disco {
             flex: 0 0 250px;
             height: 350px;

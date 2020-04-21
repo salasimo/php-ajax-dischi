@@ -16,6 +16,25 @@ body {
   font-family: "Roboto Slab", serif;
 }
 
+button {
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+.wrapper-php {
+  display: none;
+}
+
+.wrapper-php.visible {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /*HEADER=====*/
 
 header {
@@ -23,11 +42,39 @@ header {
   z-index: 100;
   width: 100vw;
   height: 100px;
-  padding-bottom: 100px;
   text-align: center;
   font-size: 20px;
   line-height: 100px;
   background-color: #343434FA;
+  color: #fff;
+}
+
+header h1 {
+  display: inline-block;
+}
+
+header button.restart {
+  padding: 5px 10px;
+  text-align: center;
+  width: 80px;
+  background-color: #333333;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  display: none;
+}
+
+header button.restart:hover {
+  transform: translateY(-50%) scale(1.02);
+}
+
+header button.restart a#home {
+  text-decoration: none;
   color: #fff;
 }
 
@@ -41,6 +88,26 @@ main .container {
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 100px;
+}
+
+main .container .scelta-metodo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+}
+
+main .container .scelta-metodo button {
+  padding: 10px 20px;
+  margin: 10px;
+  text-align: center;
+  width: 180px;
+  background-color: #1d1d1d;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 20px;
 }
 
 main .container .disco {

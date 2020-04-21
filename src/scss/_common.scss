@@ -3,3 +3,22 @@ body {
     background-color: $main-bg;
     font-family: 'Roboto Slab', serif;
 }
+
+button {
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.wrapper-php {
+    display: none;
+    &.visible{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

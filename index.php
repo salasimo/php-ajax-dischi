@@ -15,10 +15,31 @@
 
     <header>
         <h1>I tuoi Album</h1>
+        <button class="restart"><a id="home" href="index.php">Restart</a></button>
     </header>
 
     <main>
         <div class="container">
+            <div class="scelta-metodo">
+                <button id="php">Solo PHP</button>
+                <button id="ajax">PHP + AJAX</button>
+            </div>
+        <div class="wrapper-php">
+            <?php include "data.php";?>
+            <?php foreach ($dischi as $key => $disco) { ?>
+                <div class="disco">
+                    <div class="cover">
+                        <img src="<?php echo $disco["cover"] ?>" alt="<?php echo $disco["album"] ?> cover">
+                    </div>
+                    <div class="text">
+                        <h2 class="album"><?php echo $disco["album"] ?></h2>
+                        <p class="artist"><?php echo $disco["artist"] ?></p>
+                        <p class="year"><?php echo $disco["year"] ?></p>
+                    </div>
+                </div>
+
+            <?php } ?>
+        </div>
 
         </div>
     </main>
