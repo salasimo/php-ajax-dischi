@@ -1,0 +1,53 @@
+main {
+
+    .container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 100px;
+
+        .disco {
+            flex: 0 0 250px;
+            height: 350px;
+            border-radius: 20px;
+            overflow: auto;
+            margin: 30px;
+            transition: 0.4s ease;
+            cursor: pointer;
+            &:hover{
+                transform: scale(1.03);
+            }
+
+            .cover {
+                height: 250px;
+                width: 250px;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .text {
+                height: 100px;
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: $transparent-bg;
+                color: $text-color;
+                font-weight: 300;
+
+                .album{
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
